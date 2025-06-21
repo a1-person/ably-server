@@ -1,0 +1,17 @@
+{
+    "builds": [
+        {
+            "src": "index.ts",
+            "use": "@vercel/node"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.ts"
+        }
+    ],
+    "regions": [
+        "sin1"
+    ]
+}
